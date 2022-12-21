@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "CourseX";
+}
+ 
+@model IEnumerable<TP4.Models.Student>
+
+<h1>CourseX</h1>
+
+		
+			<div class="student">
+				<ol>
+			@{
+				foreach (Student s in Model)
+				{
+						<li>
+							<h3>@s.First_name</h3>
+						</li>
+				}
+					}
+				</ol>
+			</div>
+
+
+

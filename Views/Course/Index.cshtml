@@ -1,0 +1,31 @@
+﻿@{  
+	@model IEnumerable<string>
+	Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Courses";
+	}
+
+	<h1>Index</h1>
+	<div id="courses">
+
+		@{
+	
+      foreach (var s in Model)
+	{
+					<div class="course">
+					<ul  >
+					<li>
+					<h3> <a href="Course/@s" class="nav-link">@s </a> </h3>
+					</li>
+					
+					</ul>
+						
+						
+					</div>
+	}
+
+  
+  	}
+  	
+		
+	</div>
+
